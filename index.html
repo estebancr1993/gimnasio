@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>GIMNASIO</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--permite al navegador mostrar las páginas web que no cumplen con los estándares como si corrieran en versiones anteriores de IE-->
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+  <!--Menú-->
+  <div class="menu">
+    <input type="checkbox" id="nav" class="hidden"/>
+    <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+    <div class="nav-container">
+    <ul>
+      <li class="uno"><a href="#home">Inicio</a></li>
+      <li class="dropdown">
+        <a class="dropbtn">Acerca de</a>
+        <div class="dropdown-content">
+          <a href="#precios">Precios</a>
+          <a href="#mapa">Mapa</a>
+          <a href="#redes">Redes</a>
+        </div>
+      </li>
+      <li><a href="#imagenes">Imágenes</a></li>
+      <li><a href="#formu">Contacto</a></li>
+    </ul>
+    </div>
+  </div>
+
+<!--hero-image-->
+<div class="hero-image" id="home">
+  <div class="hero-text">
+    <h1>EST WARRIOR</h1>
+    <p>“La fuerza no viene de la capacidad física. Viene de una voluntad indomable.”</p>
+    <a href="#formu" class="button"><span>ÚNETE!!</span></a>
+  </div>
+</div>
+<!--Precios-->
+<h1 style="text-align:center">PRECIOS</h1>
+
+<div class="precios" id="precios">
+<div class="card1">
+  <img src="img/precio.gif" alt="precio1" style="width:100%">
+  <h2>1 Semana</h2>
+  <p class="price">19.95 €</p>
+  <p>Super precio. Una semana copleta de ejercicio!.</p>
+  <p><button>Adquirir</button></p>
+</div>
+<div class="card2">
+  <img src="img/precio.gif" alt="precio2" style="width:100%">
+  <h2>1 Mes</h2>
+  <p class="price">39.95 €</p>
+  <p>Super precio. Un mes para ponerte en forma!.</p>
+  <p><button>Adquirir</button></p>
+</div>
+<div class="card3">
+  <img src="img/precio.gif" alt="precio3" style="width:100%">
+  <h2>4 Meses</h2>
+  <p class="price">79.95 €</p>
+  <p>Super precio. Cuatro meses son los que necesitas!.</p>
+  <p><button>Adquirir</button></p>
+</div>
+</div>
+<br>
+<!--galería-->
+<h1> GALERÍA </h1>
+<section class="imagenes" id="imagenes">
+<div class="contenedor">
+<article class="imagen_columna">
+<img src="img/1.jpg" alt="1">
+</article>
+<article class="imagen_columna">
+<img src="img/2.jpg" alt="2">
+</article>
+<article class="imagen_columna">
+<img src="img/3.jpg" alt="3">
+</article>
+<article class="imagen_columna">
+<img src="img/4.jpg" alt="4">
+</article>
+<article class="imagen_columna">
+<img src="img/5.jpg" alt="5">
+</article>
+<article class="imagen_columna">
+<img src="img/6.jpg" alt="6">
+</article>
+<article class="imagen_columna">
+<img src="img/7.jpg" alt="7">
+</article>
+<article class="imagen_columna">
+<img src="img/8.jpg" alt="8">
+</article>
+</div>
+</section>
+  <br>
+  <br>
+  <h1> CONTACTO </h1>
+  <!--formularío-->
+  <article>
+  <div class="container" id="formu">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Nombre</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Apellidos</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Tus apellidos...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Correo electrónico" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">País</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">España</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="sexo">Sexo</label>
+        </div>
+        <div class="col-75">
+          <input type="radio" id="sexo" name="genero" value="hombre" checked="checked" /> Hombre
+          <input type="radio" name="genero" value="mujer" /> Mujer
+          <input type="radio" name="genero" value="Otro" /> Otro
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Asunto</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Escribe aquí..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+    </article>
+    <!--Mapa-->
+<h1> MAPA </h1>
+  <article class="mapa">
+    <p>C/ Maestro Guerrero, 77, 41010 Sevilla. TLF:955422442</p>
+<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3172.1664781061368!2d-6.062011076765086!3d37.3385672135314!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1551169575810"
+width="400" height="300" style="border:0" allowfullscreen></iframe>
+</article>
+<br>
+  <!--Pie de página-->
+  <footer id="redes">
+    <div class="redes">
+    <a href="https://twitter.com/#" target="_blank" class="fab fa-twitter"></a>
+    <a href="https://www.facebook.com/#" target="_blank" class="fab fa-facebook"></a>
+    <a href="https://instagram.com/#" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://youtube.com/#" target="_blank" class="fab fa-youtube"></a>
+    </div>
+  </footer>
+</body>
+</html>
